@@ -28,13 +28,13 @@ dart-ai-index-pipeline/
 ├── README.md             # 프로젝트 안내 문서
 ├── requirements.txt      # 의존성 라이브러리 목록
 ├── requirements.txt      # DART API(직접 생성 필요)
-├── config.py             # 전역 설정 (API Key, 연도, 경로, 키워드 사전)
+├── config.py             # [Core] 전역 설정 (API Key, 연도, 경로, 키워드 사전)
+├── ai_index_core.py      # [Core] 광의/협의 지수 계산 핵심 모듈
 ├── 01_build_universe.py  # [Step 1] 연도별 분석 대상 기업 Universe 구축 (KOSPI200+KOSDAQ)
 ├── 02_fetch_reports.py   # [Step 2] DART 사업보고서 원문 다운로드 (캐싱 & 실패로그)
-├── ai_index_core.py      # [Core] 광의/협의 지수 계산 핵심 모듈
 ├── 03_build_ai_index.py  # [Step 3] 원문 텍스트마이닝 및 지수 일괄 계산
 ├── 04_export_excel.py    # [Step 4] 엑셀 리포트(다중 시트 + 헤더 서식) 자동 생성
-└── data/                 # 데이터 저장 디렉토리 (Git 미추적)
+└── data/                 # 데이터 저장 디렉토리 (Git 미추적, 실행 시 자동 생성)
     ├── raw_reports/      # 다운로드된 원문 텍스트 캐시 (*.txt), 실행 시 자동 생성
     ├── universe.csv      # 수집 대상 기업 리스트, 실행 시 자동 생성
     ├── ai_index.csv      # 계산된 기업-연도별 AI 지수, 실행 시 자동 생성
