@@ -27,6 +27,7 @@ dart-ai-index-pipeline/
 ├── .gitignore            # Git 추적 제외 설정 (비밀키, 데이터 파일 등)
 ├── README.md             # 프로젝트 안내 문서
 ├── requirements.txt      # 의존성 라이브러리 목록
+├── requirements.txt      # DART API(직접 생성 필요)
 ├── config.py             # 전역 설정 (API Key, 연도, 경로, 키워드 사전)
 ├── 01_build_universe.py  # [Step 1] 연도별 분석 대상 기업 Universe 구축 (KOSPI200+KOSDAQ)
 ├── 02_fetch_reports.py   # [Step 2] DART 사업보고서 원문 다운로드 (캐싱 & 실패로그)
@@ -74,6 +75,11 @@ OpenDART([https://opendart.fss.or.kr](https://opendart.fss.or.kr))에서 인증�
   ```
 - **방법 B: `secret.txt` 파일 생성**
   프로젝트 루트 디렉토리에 `secret.txt` 파일을 만들어 발급받은 API 키를 텍스트로 저장합니다. (`.gitignore`에 등록되어 있어 Git에 커밋되지 않습니다.)
+
+  `secret.txt` 예시: 
+  ```text
+  YOUR_DART_API_KEY_HERE    # 따옴표 등 없이 API KEY만 기재
+  ```
 
 ---
 
