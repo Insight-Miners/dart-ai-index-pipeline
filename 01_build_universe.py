@@ -22,7 +22,7 @@ def get_kospi200(date: str):
     return stock.get_index_portfolio_deposit_file(config.KOSPI200_INDEX, date=date)
 
 
-def get_kosdaq_top(date: str, top_n: int = 200):
+def get_kosdaq_top(date: str, top_n: int = 150):
     """KOSDAQ 시가총액 상위 종목(대표종목 대용). Premier 세그먼트 미제공 시 대체."""
     cap = stock.get_market_cap_by_ticker(date, market="KOSDAQ")
     cap = cap.sort_values("시가총액", ascending=False).head(top_n)
