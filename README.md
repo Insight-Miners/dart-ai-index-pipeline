@@ -27,7 +27,7 @@ dart-ai-index-pipeline/
 ├── .gitignore            # Git 추적 제외 설정 (비밀키, 데이터 파일 등)
 ├── README.md             # 프로젝트 안내 문서
 ├── requirements.txt      # 의존성 라이브러리 목록
-├── requirements.txt      # DART API(직접 생성 필요)
+├── secret.txt            # DART API(직접 생성 필요)
 ├── config.py             # [Core] 전역 설정 (API Key, 연도, 경로, 키워드 사전)
 ├── ai_index_core.py      # [Core] 광의/협의 지수 계산 핵심 모듈
 ├── 01_build_universe.py  # [Step 1] 연도별 분석 대상 기업 Universe 구축 (KOSPI200+KOSDAQ)
