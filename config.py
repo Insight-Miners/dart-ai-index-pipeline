@@ -22,7 +22,7 @@ def load_dart_api_key() -> str:
 
 # ── 분석 대상 연도 ─────────────────────────────────────────────
 START_YEAR = 2015
-END_YEAR = 2024
+END_YEAR = 2025
 YEARS = list(range(START_YEAR, END_YEAR + 1))
 
 # ── 경로 ──────────────────────────────────────────────────────
