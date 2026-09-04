@@ -61,7 +61,7 @@ dart-ai-index-pipeline/
 
 ### 1. Repository 클론 및 라이브러리 설치
 ```bash
-git clone https://github.com/your-username/dart-ai-index-pipeline.git
+git clone https://github.com/Insight-Miners/dart-ai-index-pipeline.git
 cd dart-ai-index-pipeline
 pip install -r requirements.txt
 ```
